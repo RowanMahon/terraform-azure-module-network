@@ -4,12 +4,12 @@ locals {
     lower(trimspace(name)) => trimspace(cidr)
   }
 
- mod_tags = merge( 
-  var.base_tags, 
-  {
-    manager = "John Robinson (NetMod v1.0.1)"
+  mod_tags = merge(
+    var.base_tags,
+    {
+      manager = "Clare Hopper (NetMod v1.0.2)"
 
-   } 
+    }
   )
 
 }
